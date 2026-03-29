@@ -1,5 +1,10 @@
 # MEFAI CLI
 
+[![CI](https://github.com/mefai-dev/mefai-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/mefai-dev/mefai-cli/actions/workflows/ci.yml)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![Built with Typer](https://img.shields.io/badge/built_with-Typer-009688.svg)](https://typer.tiangolo.com/)
+
 Command line interface for the MEFAI Engine trading platform. Built with Typer and Rich for a beautiful terminal experience.
 
 ## Installation
