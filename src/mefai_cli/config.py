@@ -58,3 +58,12 @@ def get_api_key() -> str:
 def get_ws_url() -> str:
     """Return the configured WebSocket URL."""
     return str(load_config().get("ws_url", DEFAULT_CONFIG["ws_url"]))
+
+
+DEFAULT_OUTPUT_FORMAT = "table"
+SUPPORTED_FORMATS = {"table", "json", "csv", "yaml"}
+
+
+def validate_output_format(fmt: str) -> str:
+    """Ensure output format is supported, fallback to table."""
+    return fmt if fmt in SUPPORTED_FORMATS else DEFAULT_OUTPUT_FORMAT
